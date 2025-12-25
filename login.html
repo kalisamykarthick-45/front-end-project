@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4d4e52, #cbb2e4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.login-card {
+    max-width: 420px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+
+.login-card h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.login-card p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ddd;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #80b7b9, #4fd1b1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Links */
+.extra {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.extra a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.extra a:hover {
+    text-decoration: underline;
+}
+
+.extra span {
+    margin: 0 8px;
+}
+
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-card h2 {
+        font-size: 24px;
+    }
+}
+
+</style>
+    
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+<div class="login-wrapper">
+    <div class="login-card">
+        <h2>Hii !</h2>
+        <p>Please login to your account</p>
+
+        <form>
+            <div class="input-group">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Username" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fa fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="extra">
+                <a href="#">Forgot Password?</a>
+                <span>|</span>
+                <a href="#">Create Account</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Bootstrap & Icons -->
+    <link rel="stylesheet" href="style.css">
+    <script src="product.js"></script>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+
+            <a class="navbar-brand d-flex align-items-center fw-bold brand-text" href="#">
+                <img src="images/brand logo high.png" alt="Logo"
+                    style="width: 240px; height: 84px; margin-right: 10px;">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                </ul>
+
+
+                <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+
+
+                    <form class="d-flex" onsubmit="return false;">
+                        <input class="form-control" id="navbar-search" type="search" placeholder="Search...">
+                        <button class="btn btn-outline-light ms-2" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+
+                    <a href="cart.html" class="btn position-relative ms-3">
+                        <i class="bi bi-bag" style="font-size: 25px; color: white;"></i>
+                        <span id="cartCount"
+                            class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                    </a>
+
+
+
+
+                    <a href="login.html" class="login-icon">
+                        <i class="bi bi-person-fill"></i>
+                    </a>
+
+                    <a href="wishlist.html" class="btn position-relative ms-2">
+                        <i class="bi bi-heart-fill text-danger fs-4"></i>
+                        <span id="wishlistCount"
+                            class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                    </a>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- shop banner -->
+
+    <section id="shop-banner" aria-label="shop-banner">
+        <div class="banner-box">
+            <h4 class="anim-top" style="color: rgb(235, 187, 146);">Look Good. Feel Better.</h4>
+
+            <h1 class="anim-fade" style="color: rgb(180, 145, 141);">Your Everyday Style Starts Here</h1>
+
+            <p class="anim-bottom" style="color: rgb(247, 188, 137);">
+                Explore sleek designs and effortlessly modern pieces crafted for comfort, confidence, and your unique
+                vibe.
+            </p>
+
+            <button type="button" class="banner-shop-btn anim-scale">Explore Now</button>
+
+        </div>
+    </section>
+
+
+
+    <section class="shop-filters py-4">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Categories of shop page-->
+
+                <div class="col-md-4 mb-3">
+                    <select class="form-select filter-select">
+                        <option selected>All Categories</option>
+                        <option>Men</option>
+                        <option>Women</option>
+                        <option>Kids</option>
+                        <option>Accessories</option>
+                    </select>
+                </div>
+
+                <!-- Price -->
+
+                <div class="col-md-4 mb-3">
+                    <select class="form-select filter-select">
+                        <option selected>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest</option>
+                        <option>Best Selling</option>
+                    </select>
+                </div>
+
+                <!-- Search -->
+
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control filter-search" placeholder="Search products...">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- shirt section -->
+
+    <section class="section-p1">
+        <div class="container">
+            <h3 class="shop-title gradient-text">SHIRTS</h3>
+
+            <div class="row">
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="1">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shirt 1.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 1)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                            <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Premium Cotton Shirt</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.9</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹999</span>
+                                <del class="text-muted ms-2">₹1399</del>
+                            </p>
+
+                            <button class="view-btn  w-100 fw-bold mt-auto" onclick="openProductModal(1)">
+                                view details
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="2">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shirt 2.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 2)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+
+ <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Casual Shirt</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.8</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1299</span>
+                                <del class="text-muted ms-2">₹2799</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(2)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="3">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shirt 3.webp">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2 px-3 py-2">NEW</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 3)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+
+ <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Casual Shirt</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.5</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1399</span>
+                                <del class="text-muted ms-2">₹1899</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(3)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="4">
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shirt 5.webp">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-2 px-3 py-2">HOT</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 4)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+ <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Checked Shirt</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.1</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1199</span>
+                                <del class="text-muted ms-2">₹1599</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(4)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- shoes section -->
+
+    <section class="section-p1">
+        <div class="container">
+            <h3 class="section-title animated-shoes">SHOES</h3>
+
+            <div class="row">
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="5">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shoe new 1.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 5)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+ <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">loafer</h5>
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.9</small>
+                            </div>
+                            <p><span class="fw-bold fs-5">₹1499</span> <del class="text-muted">₹1999</del></p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(5)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="6">
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shoe new 2.webp">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-2">HOT</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 6)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Formal Shoe</h5>
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.2</small>
+                            </div>
+                            <p><span class="fw-bold fs-5">₹1299</span> <del class="text-muted">₹1699</del></p>
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(6)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="7">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shoe new 3.webp">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">NEW</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 7)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Sports Shoe</h5>
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.7</small>
+                            </div>
+                            <p><span class="fw-bold fs-5">₹1899</span> <del class="text-muted">₹2499</del></p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(7)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="8">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/shoe new 4.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 8)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Classic Sports Shoe</h5>
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <small class="text-muted ms-1">4.4</small>
+                            </div>
+                            <p><span class="fw-bold fs-5">₹1599</span> <del class="text-muted">₹2099</del></p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(8)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- bag section -->
+
+
+    <section class="section-p1">
+        <div class="container">
+            <h3 class="section-title animated-bags">BAGS</h3>
+
+            <div class="row">
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="9">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/bag new 1.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 9)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column">
+                            <h5 class="fw-semibold mb-1">Bag</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.8</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5">₹1199</span>
+                                <del class="text-muted ms-2">₹1699</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(9)">
+                                View Details
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="10">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/bag new 2.webp">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-2">HOT</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 10)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column">
+                            <h5 class="fw-semibold mb-1">Hand Bag</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.3</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5">₹1599</span>
+                                <del class="text-muted ms-2">₹1999</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(10)">
+                                View Details
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="11">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/bag new 3.webp">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2">NEW</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 11)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column">
+                            <h5 class="fw-semibold mb-1">Premium Laptop Bag</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.4</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5">₹899</span>
+                                <del class="text-muted ms-2">₹1299</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(11)">
+                                View Details
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="12">
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/bag new 4.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 12)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column">
+                            <h5 class="fw-semibold mb-1">Travel Bag</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.6</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5">₹2599</span>
+                                <del class="text-muted ms-2">₹3099</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(12)">
+                                View Details
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- watch section -->
+
+
+    <section class="section-p1">
+        <div class="container">
+            <h3 class="section-title animated-watches">WATCHES</h3>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="13">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/watch new 1.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 13)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Luxury Analog Watch</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.3</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1499</span>
+                                <del class="text-muted ms-2">₹1999</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(13)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="14">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/watch new 2.webp">
+                            <button class="fav-btn" onclick="toggleWishlist(this, 14)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Smart Fitness Watch</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.8</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1799</span>
+                                <del class="text-muted ms-2">₹2499</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(14)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="15">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/watch new 4.webp">
+                            <button class="fav-btn" onclick="toggleWishlist(this, 15)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Minimalist women Watch</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.9</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1299</span>
+                                <del class="text-muted ms-2">₹1699</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(15)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="16">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/watch new 5.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 16)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Steel Strap Watch</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">2.9</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹999</span>
+                                <del class="text-muted ms-2">₹1399</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(16)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+    <!-- jeans section -->
+
+
+    <section class="section-p1">
+        <div class="container">
+            <h3 class="section-title animated-jeans">JEANS</h3>
+
+            <div class="row">
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="17">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/jeans.1 women.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 17)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Slim Fit Denim Jeans</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.2</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1199</span>
+                                <del class="text-muted ms-2">₹1599</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(17)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="18">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/jeans 6 women.webp">
+                            <button class="fav-btn" onclick="toggleWishlist(this, 18)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Straight Fit Blue Jeans</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.9</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹999</span>
+                                <del class="text-muted ms-2">₹1499</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(18)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="19">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/jeans 7 women.webp">
+                            <button class="fav-btn" onclick="toggleWishlist(this, 19)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Dark Wash Regular Jeans</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.0</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹1299</span>
+                                <del class="text-muted ms-2">₹1899</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(19)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="20">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/track suit big women.webp" height="300px">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 20)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Track Suit Women</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">2.9</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹899</span>
+                                <del class="text-muted ms-2">₹1299</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(20)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- t shirt section -->
+
+
+    <section class="section-p1">
+        <div class="container">
+            <h3 class="section-title animated-combo">T-SHIRTS & SUITS</h3>
+
+            <div class="row">
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="21">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/t shirt 2.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 21)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Premium Cotton T-Shirt</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.4</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹499</span>
+                                <del class="text-muted ms-2">₹799</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(21)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="22">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/t shirt 3.webp">
+                            <button class="fav-btn" onclick="toggleWishlist(this, 22)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Graphic Printed T-shirt</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.9</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹599</span>
+                                <del class="text-muted ms-2">₹899</del>
+                            </p>
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(22)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="23">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/t shirt 4.webp">
+                            <button class="fav-btn" onclick="toggleWishlist(this, 23)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Oversized Trendy T-shirt</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">4.1</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹699</span>
+                                <del class="text-muted ms-2">₹999</del>
+                            </p>
+
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(23)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="product-card" data-id="24">
+
+
+                        <div class="position-relative product-img-box">
+                            <img src="images/suit image big.webp">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-3 py-2">SALE</span>
+                            <button class="fav-btn" onclick="toggleWishlist(this, 24)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+
+                             <button class="share-btn" onclick="toggleShare(this)">
+                                <i class="bi bi-share-fill"></i>
+                            </button>
+
+                            <div class="share-menu mt-4">
+                                <a href="#" onclick="shareProduct('whatsapp', 5)"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#" onclick="shareProduct('facebook', 5)"><i class="bi bi-facebook"></i></a>
+                                <a href="#" onclick="shareProduct('instagram', 5)"><i class="bi bi-instagram"></i></a>
+                                <a href="#" onclick="shareProduct('copy', 5)"><i class="bi bi-link-45deg"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 d-flex flex-column flex-grow-1">
+                            <h5 class="fw-semibold mb-1">Formal Suit</h5>
+
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <small class="text-muted ms-1">3.0</small>
+                            </div>
+
+                            <p class="mb-3">
+                                <span class="fw-bold fs-5 text-dark">₹2099</span>
+                                <del class="text-muted ms-2">₹3599</del>
+                            </p>
+
+
+                            <button class="view-btn w-100 fw-bold mt-auto" onclick="openProductModal(24)">
+                                View Details
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+
+    <!-- shop mini banner -->
+
+    <section class="mini-shop-banner d-flex align-items-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+
+                    <h4 class="banner-subtitle">Exclusive Offers</h4>
+                    <h2 class="banner-title">Shop the Latest Trends</h2>
+                    <p class="banner-text">Premium quality • Best prices • Trending styles</p>
+
+                    <a href="shop.html" class="msb-btn">Shop Now</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Classic Brand  Footer -->
+
+    <footer class="classic-footer">
+        <div class="container py-5 mt-4">
+            <div class="row gy-5">
+
+
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-logo">Classic Brand</h3>
+                    <p class="footer-desc">
+                        Timeless fashion crafted with elegance and precision.
+                        Discover premium styles designed for confidence and comfort.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Customer Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt-fill"></i> 112 Classic Street, Coimbatore, Tamil Nadu</li>
+                        <li><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li><i class="bi bi-envelope-fill"></i> <a
+                                href="mailto:classicbrand@gmail.com">classicbrand@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="footer-payments text-center mt-4">
+                <span class="payment-title">We Accept</span>
+
+                <div class="payment-icons">
+                    <img src="images/google play.jpg" alt="RuPay">
+                    <img src="images/upi.jpg" alt="UPI">
+                    <img src="images/g pay.jpg" alt="Google Pay">
+                    <img src="images/phone pay 2.png" alt="PhonePe">
+                    <img src="images/paytm.png" alt="Paytm">
+                </div>
+            </div>
+
+
+            <hr class="footer-divider">
+
+
+            <div class="footer-bottom text-center">
+                <p>© 2025 Classic Brand. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        document.querySelector(".footer-logo")?.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <!-- product modal -->
+
+
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content product-modal-content">
+
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body p-0">
+                    <div class="row g-0 h-100">
+
+                        <div class="col-lg-6 p-4 d-flex flex-column align-items-center bg-white">
+                            <div class="main-img-container w-100 mb-3">
+                                <img src="https://placehold.co/600x600/f5f5f5/333?text=Product+Image" id="mainImage"
+                                    class="img-fluid w-100 product-main-img">
+                            </div>
+                            <div class="d-flex gap-3" id="thumbContainer">
+                                <img src="https://placehold.co/100x100/f5f5f5/333?text=1" class="thumb-img active"
+                                    onclick="changeImage(this)">
+                                <img src="https://placehold.co/100x100/eee/333?text=2" class="thumb-img"
+                                    onclick="changeImage(this)">
+                                <img src="https://placehold.co/100x100/ddd/333?text=3" class="thumb-img"
+                                    onclick="changeImage(this)">
+                                <img src="https://placehold.co/100x100/ccc/333?text=4" class="thumb-img"
+                                    onclick="changeImage(this)">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 p-5 bg-white d-flex flex-column justify-content-center">
+
+                            <div class="mb-2">
+                                <span class="badge bg-danger bg-opacity-10 text-danger mb-2 px-3 py-2 rounded-pill">Hot
+                                    Seller</span>
+                                <h2 class="product-title mb-2" id="modalTitle"></h2>
+
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3 star-rating">
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-half me-2"></i>
+                                <span class="text-muted small fw-semibold text-decoration-underline">4.8 (120
+                                    Reviews)</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <span class="price-tag" id="modalPrice">₹1,499</span>
+                                <del class="text-muted ms-2 fs-5" id="modalOldPrice">₹2,999</del>
+                                <span class="text-success ms-2 fw-bold small">50% OFF</span>
+                            </div>
+
+                            <p class="text-muted mb-4" id="modalDesc" style="line-height: 1.6;">
+                                Crafted from 100% premium cotton, this shirt offers a slim fit that contours to your
+                                body. Perfect for office wear or formal events. Breathable fabric ensures comfort all
+                                day long.
+                            </p>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-6">
+                                    <label class="fw-bold small text-uppercase mb-1">Select Size</label>
+                                    <select class="form-select border-2 py-2" style="border-radius: 10px;">
+                                        <option>S - Small</option>
+                                        <option selected>M - Medium</option>
+                                        <option>L - Large</option>
+                                        <option>XL - Extra Large</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label class="fw-bold small text-uppercase mb-1">Quantity</label>
+                                    <div class="qty-input-group w-100 justify-content-between">
+                                        <button class="qty-btn" onclick="updateQty(-1)">-</button>
+                                        <input type="number" id="qtyInput" class="qty-input" value="1" readonly>
+                                        <button class="qty-btn" onclick="updateQty(1)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex gap-3 mt-auto">
+                                <button class="btn btn-add-cart flex-grow-1">
+                                    <i class="bi bi-bag-plus-fill me-2"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-buy-now flex-grow-1">
+                                    Buy Now
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

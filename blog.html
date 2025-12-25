@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- Bootstrap & Icons -->
+  <link rel="stylesheet" href="style.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+
+      <a class="navbar-brand d-flex align-items-center fw-bold brand-text" href="#">
+        <img src="images/brand logo high.png" alt="Logo" style="width: 240px; height: 84px; margin-right: 10px;">
+      </a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        </ul>
+
+
+        <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+
+
+          <form class="d-flex" role="search">
+            <input class="form-control" id="navbar-search" type="search" placeholder="Search...">
+            <button class="btn btn-outline-light ms-2" id="search-btn" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <button class="btn position-relative ms-3" id="cart-toggle" style="border: none; background: transparent;">
+            <i class="bi bi-bag" onclick="toggleCart()" style="font-size: 25px; color: white;"></i>
+            <span id="cartCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+          </button>
+
+
+          <a href="login.html" class="login-icon">
+            <i class="bi bi-person-fill"></i>
+          </a>
+
+          <a href="wishlist.html" class="btn position-relative ms-2">
+            <i class="bi bi-heart-fill text-danger fs-4"></i>
+            <span id="wishlistCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Section -->
+
+  <!-- blog banner -->
+
+  <section id="blog-banner" aria-label="Blog banner">
+    <div class="banner-box">
+      <h4 class="animate-top">Trends • Reviews • Best Deals — Everything You Need Before You Buy.</h4>
+      <h1 class="animate-fade">Your Ultimate Shopping Hub</h1>
+      <p class="animate-bottom">Shop Smart. Save Big. Stay Ahead.</p>
+      <button type="button" class="banner-btn animate-scale">Explore Now</button>
+    </div>
+  </section>
+
+  <!-- Blog  -->
+
+  <section id="blog" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mt-2 mb-5">From Our Blog</h2>
+
+      <div class="row g-4">
+
+        <!-- Blog 1 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="images/blog page sm 1.jpg" class="card-img-top" alt="">
+            <div class="blog-tag">Fashion Tips</div>
+            <div class="blog-content">
+              <h5>10 Wardrobe Essentials Every Woman Should Own</h5>
+              <p>Build a timeless wardrobe with pieces that never go out of style.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="images/blog page sm 2.jpg" class="card-img-top" alt="">
+            <div class="blog-tag">Footwear</div>
+            <div class="blog-content">
+              <h5>Sneaker Guide 2025: Comfort Meets Style</h5>
+              <p>Find out what makes a sneaker perfect—design, comfort & durability.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="images/blog page sm 3.jpg" class="card-img-top" alt="">
+            <div class="blog-tag">Shopping Tips</div>
+            <div class="blog-content">
+              <h5>Smart Shopping Tips for Premium Brands</h5>
+              <p>Learn how to get high-end fashion without overspending.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 4 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="images/blog page sm 4.jpg" class="card-img-top" alt="">
+            <div class="blog-tag">Care Guide</div>
+            <div class="blog-content">
+              <h5>How to Care for Leather Bags & Shoes</h5>
+              <p>Make your leather accessories last longer with expert tips.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 5 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="images/blog page sm 5.jpg" class="card-img-top" alt="">
+            <div class="blog-tag">Trends 2025</div>
+            <div class="blog-content">
+              <h5>Top Fashion Trends That Will Rule 2025</h5>
+              <p>From bold silhouettes to minimal elegance—what’s trending next?</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog 6 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="images/blog page sm 6.jpg" class="card-img-top" alt="">
+            <div class="blog-tag">Men’s Style</div>
+            <div class="blog-content">
+              <h5>Men’s Smart Casual Guide: Dress Sharp Effortlessly</h5>
+              <p>Master the perfect balance between comfort & sophistication.</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Classic Brand  Footer -->
+
+  <footer class="classic-footer">
+    <div class="container py-5 mt-4">
+      <div class="row gy-5">
+
+
+        <div class="col-lg-4 col-md-6">
+          <h3 class="footer-logo">Classic Brand</h3>
+          <p class="footer-desc">
+            Timeless fashion crafted with elegance and precision.
+            Discover premium styles designed for confidence and comfort.
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Customer Support</h5>
+          <ul class="footer-links">
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt-fill"></i> 112 Classic Street, Coimbatore, Tamil Nadu</li>
+            <li><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:classicbrand@gmail.com">classicbrand@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="footer-payments text-center mt-4">
+                <span class="payment-title">We Accept</span>
+
+                <div class="payment-icons">
+                    <img src="images/google play.jpg" alt="RuPay">
+                    <img src="images/upi.jpg" alt="UPI">
+                    <img src="images/g pay.jpg" alt="Google Pay">
+                    <img src="images/phone pay 2.png" alt="PhonePe">
+                    <img src="images/paytm.png" alt="Paytm">
+                </div>
+            </div>
+
+      <hr class="footer-divider">
+
+
+      <div class="footer-bottom text-center">
+        <p>© 2025 Classic Brand. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+
+    document.querySelector(".footer-logo")?.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+
+</html>
